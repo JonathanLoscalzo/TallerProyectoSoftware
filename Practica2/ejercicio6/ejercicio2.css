@@ -1,0 +1,12 @@
+.bloque {
+	display: block;
+	padding: 1%
+}
+
+.bloque input{
+	margin-left: 1%;
+}
+
+.content {
+	display: block;
+}
