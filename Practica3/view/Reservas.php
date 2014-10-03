@@ -1,9 +1,9 @@
 <?php
 
-include_once("view/TwigView.php");
-class ReservasView extends TwigView
-{
+include_once("TwigView.php");
+class ReservaView extends TwigView
+{   
     public function index(){
-        echo self::getTwig()->render('Reservas.html');
+        echo self::getTwig()->render('Reservas.html.twig');
     }
 }

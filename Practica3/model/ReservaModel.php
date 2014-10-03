@@ -11,34 +11,45 @@
  *
  * @author jloscalzo
  */
-class ReservaModel {
-    private $nombre;
-    private $apellido;
-    private $email;
-    private $telefono;
-    private $nacimiento;
-    private $docType;
-    private $docNumber;
-    private $fechaReserva;
-    private $cantidad;
-    private $observaciones;
+include_once("Model.php");
+
+class ReservaModel extends Model {
+
+    protected $nombre;
+    protected $apellido;
+    protected $email;
+    protected $telefono;
+    protected $nacimiento;
+    protected $docType;
+    protected $docNumber;
+    protected $fechaReserva;
+    protected $cantidad;
+    protected $observaciones;
 
     public function __contruct($arr) {
         /* llega a andar esto ... */
-        foreach ($arr as $key=>$value){
+//        print_r("hola");die;
+//        foreach ($arr as $key=>$value){
+//            $this->$key = $arr[$key];
+//        }
+//        $this->nombre = $arr["nombre"];
+//        $this->apellido = $arr["apellido"];
+//        $this->email = $arr["email"];
+//        $this->telefono = $arr["telefono"];
+//        $this->nacimiento = $arr["nacimiento"];
+//        $this->docType = $arr["docType"];
+//        $this->docNumber = $arr["docNumber"];
+//        $this->fechaReserva = $arr["fechaReserva"];
+//        $this->cantidad = $arr["cantidad"];
+//        $this->observaciones = $arr["observaciones"];
+//        
+    }
+
+    public function set($arr) {
+        print_r("hola");
+        foreach ($arr as $key => $value) {
             $this->$key = $arr[$key];
         }
-//        $this->nombre = $arr["nombre"];
-//        $this->apellido =$arr[];
-//        $this->email = $arr[];
-//        $this->telefono =$arr[];
-//        $this->nacimiento =$arr[];
-//        $this->docType = $arr[];
-//        $this->docNumber = $arr[];
-//        $this->fechaReserva = $arr[];
-//        $this->cantidad= $arr[];
-//        $this->observaciones = $arr[];
-//        
     }
 
 }

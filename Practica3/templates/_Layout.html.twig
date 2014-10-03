@@ -5,7 +5,12 @@
 </html>
 
 <body>
-
+{% if message is defined %}
+    <div id ="error">
+         MENSAJE : {{ message }}
+    </div>
+    
+{% endif %}
 <div id="content">
 {% block content %}
 

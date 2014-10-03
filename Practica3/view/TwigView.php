@@ -1,7 +1,9 @@
 <?php
 
-include_once("vendor/autoload.php");
-include_once("controller/LoginController.php");
+
+include_once("../vendor/autoload.php");
+
+//include_once("controller/LoginController.php");
 
 abstract class TwigView {
 
@@ -12,10 +14,11 @@ abstract class TwigView {
         if (!isset(self::$twig)) {
 
             Twig_Autoloader::register();
-            $loader = new Twig_Loader_Filesystem('templates/');
+            $loader = new Twig_Loader_Filesystem('../templates/');
             self::$twig = new Twig_Environment($loader);
             
-            LoginController::getInstance()->startSession();
+            //LoginController::getInstance()->startSession();
+            session_start();
             self::$twig->addGlobal('session', $_SESSION); 
 
             $cant = count(split("/", $_SERVER['REQUEST_URI'])) - 2;

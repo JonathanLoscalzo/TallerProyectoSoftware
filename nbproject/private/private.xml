@@ -2,6 +2,12 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/opt/lampp/htdocs/Default-xampp-no-subir/TallerProyectoSoftware/Practica3/repository/ReservaRepository.php</file>
+            <file>file:/opt/lampp/htdocs/Default-xampp-no-subir/TallerProyectoSoftware/Practica3/view/TwigView.php</file>
+            <file>file:/opt/lampp/htdocs/Default-xampp-no-subir/TallerProyectoSoftware/Practica3/templates/Reservas.html.twig</file>
+            <file>file:/opt/lampp/htdocs/Default-xampp-no-subir/TallerProyectoSoftware/Practica3/controller/ReservaController.php</file>
+            <file>file:/opt/lampp/htdocs/Default-xampp-no-subir/TallerProyectoSoftware/Practica3/model/ReservaModel.php</file>
+        </group>
     </open-files>
 </project-private>
